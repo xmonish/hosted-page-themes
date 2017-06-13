@@ -27,6 +27,14 @@ Your site should be preconfigured with a hosted page running with the same files
 
 https://{yoursitename}.hub.loginradius.com/auth.aspx
 
+## Screenshots
+![screen shot 2017-06-13 at 9 47 04 am](https://user-images.githubusercontent.com/14913591/27094402-c98117b4-501e-11e7-8851-a592a5da0436.png)
+
+![screen shot 2017-06-13 at 9 48 28 am](https://user-images.githubusercontent.com/14913591/27094195-28e450e6-501e-11e7-8ba4-80765b2fb25c.png)
+
+![screen shot 2017-06-13 at 9 48 48 am](https://user-images.githubusercontent.com/14913591/27094200-2c0e30de-501e-11e7-86b4-6e2a8b7d5725.png)
+
+
 ## Author
 
 [LoginRadius](https://www.loginradius.com/)
