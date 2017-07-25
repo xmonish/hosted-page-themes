@@ -1,0 +1,908 @@
+/*Body Styling*/
+
+@charset "UTF-8";
+
+body, html {
+  height:100%
+}
+
+
+html {
+	color: #000;
+}
+body {
+	color: #444;
+  background: linear-gradient(135deg,#29d,#a1e2fb);
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-size: 100%;
+	color: #444;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  margin: 0 0 0.5rem;
+  padding: 0;
+}
+img {
+  max-width:100%
+}
+h1 {
+    font-size:25px;
+    line-height:25px;
+}
+p{
+  font-family: Helvetica, Arial, sans-serif;
+}
+.mar-50{margin-top:50px;margin-bottom:50px;}
+.mar-20{margin-top:25px;margin-bottom:10px;}
+.box{
+	border:10px solid white;
+	background:#29d;
+	padding:0px 20px;
+	float: left;
+}
+.l_grey{color:white;}
+.rel{position:relative;width:100%;float:left;}
+.ma_h1 {
+    position: relative;
+    margin: 20px 0px;
+    background: #29d;
+    display: inline-block;
+    z-index: 2;
+    padding-right: 15px;
+}
+
+.line {
+    border: 1px solid white;
+    position: absolute;
+    top: 48%;
+    width: 100%;
+    left: 0px;
+    z-index: 1;
+    float: left;
+}
+
+footer a {
+  text-decoration: underline;
+	color:white !important;
+}
+
+footer a:hover, footer a:focus {
+    color:#BABABA !important
+    cursor: pointer;
+
+}
+form.ma-form input:-webkit-placeholder {
+	color:white;
+}
+form.ma-form input:-moz-placeholder {
+	color:white;
+}
+form.ma-form input:placeholder {
+	color:white;
+}
+.custom-form-grop .form-control {
+    padding-left: 15px;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    background: transparent;
+    border: 1px solid white;
+	color:#fff;
+	border-radius: 0;
+}
+.custom-form-grop .form-control:focus {
+  box-shadow: none;
+}
+form.ma-form .wid-50 {
+    width: 48%;
+}
+form.ma-form .wid-50 + .wid-50  {
+    float: right;
+}
+.gap-20{margin-bottom:20px;}
+.form-height-control {
+  opacity: 1 !important;
+  padding: 0 !important;
+  position: static !important;
+}
+
+
+.read-more {
+  color: white;
+  display: block;
+  padding: 10px 0;
+}
+.read-more:hover {
+  color: white;
+  cursor: pointer;
+
+  }
+.custom-form-grop {
+  opacity: 1 !important;
+  padding: 0 !important;
+  position: static !important;
+}
+  .padding-right-group {
+  padding-right: 5px !important;
+}
+.padding-left-group {
+  padding-left: 5px !important;
+}
+.social {
+    width: 50px;
+    height: 50px;
+    font-size: 30px !important;
+    color: #fff;
+	margin-right:5px;
+    text-align: center;
+    display: inline-block;
+	line-height: 50px !important;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	border-radius:5px;
+	color: #fff;
+	-webkit-transition: all .7s;
+	-moz-transition: all .7s;
+	-o-transition: all .7s;
+	-ms-transition: all .7s;
+	transition: all .7s;
+}
+.social:hover {
+	opacity: 0.7;
+  cursor: pointer;
+
+    filter: alpha(opacity=70); /* For IE8 and earlier */
+}
+i.fa.fa-facebook.social {background: #333d6d;}
+i.fa.fa-linkedin.social {background: #007bb6;}
+i.fa.fa-twitter.social {background: #00aced;}
+i.fa.fa-google.social {background: #dd4b39;}
+i.fa.fa-rics.social {background: #4c2f69;}
+i.fa.fa-rics.social img {margin-top:-5px;line-height:50px!important;}
+footer {
+  background: rgba(0,0,0,0.6);
+  margin-top: 60px;
+  width: 100%;
+  z-index: 9999;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+footer p{
+    font-size:12px;
+}
+.right {
+    float: right;
+	text-align: left;
+}
+a.help {
+    background: #ed4c4c;
+    text-decoration: none;
+    color: #fff !important;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    -moz-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    -ms--transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    position: fixed;
+    right:-22px;
+    top: 45%;
+	cursor:pointer;
+	z-index:999;
+}
+/*========= TABS =========*/
+#container {
+    height:850px;
+}
+
+.social-icons-reg {
+  opacity: 1 !important;
+  padding: 0 !important;
+  position: static !important;
+  text-align: center;
+}
+#container input[type=radio] {
+    display: none;
+}
+#container input:hover + label {
+	background: white;
+	color: #666;
+}
+
+.forget-password {
+  color: #fff;
+  padding: 0 0 0 10px;
+}
+.forget-password:hover {
+  color: #fff;
+  cursor: pointer;
+
+}
+.custom-label {
+  font-size: 15px !important;
+    padding: 0 0 5px !important;
+    background:none !important;
+}
+#container input:checked + label {
+	background: white;
+    color: #29d;
+	position: relative;
+	z-index: 6;
+}
+
+#content {
+	width: 100%;
+	float: left;
+	position: relative;
+}
+
+#content div {
+	opacity: 0;
+	padding: 1.5em;
+	position: absolute;
+	z-index: -100;
+	/*
+	transition: all linear 0.1s;
+	*/
+}
+.captch-form-control {
+  border: 1px solid white;
+  opacity: 1 !important;
+  padding: 0 !important;
+  position: static !important;
+}
+.captch-form-control .form-control {
+  border: medium none;
+  display: inline-block;
+  width: 55% !important;
+}
+.captch-form-control img {
+  background: #fff none repeat scroll 0 0;
+  display: inline-block;
+  width: 40%;
+}
+#container input#tab-1:checked ~ #content #content-1,
+#container input#tab-2:checked ~ #content #content-2,
+#container input#tab-3:checked ~ #content #content-3,
+#container input#tab-4:checked ~ #content #content-4
+ {
+    opacity: 1;
+    z-index: 100;
+}
+body {
+  padding-top:50px;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dl {
+  margin-bottom: 50px;
+}
+
+#bug:target {
+  outline: 4px solid #ccc;
+}
+.tabPanel-widget {
+  margin: 0 auto;
+  position: relative;
+  width: 500px;
+}
+.tabPanel-widget > label {
+  position: absolute;
+  z-index: 1;
+}
+.tabPanel-widget > label, .tabPanel-widget > h2 {
+  font-size: 14px;
+  font-weight: 300;
+  height: 50px;
+  line-height: 50px;
+  width: 9em;
+}
+.tabPanel-widget > h2 {
+  position: relative;
+  margin: 0;
+  text-align: center;
+  background: #29d;
+  color: white;
+  font-size: 14px;
+  font-family: Helvetica,Arial,sans-serif
+}
+.tabPanel-widget > label ~ label,
+.tabPanel-widget > h2 ~ h2 {
+  position: absolute;
+  top: 0;
+}
+.tabPanel-widget label:nth-child(1),
+.tabPanel-widget h2:nth-child(3) {
+  left: 0em;
+}
+
+.tabPanel-widget label:nth-child(5),
+.tabPanel-widget h2:nth-child(7) {
+  left: 9.3em;
+}
+
+.tabPanel-widget label:nth-child(9),
+.tabPanel-widget h2:nth-child(11) {
+  left: 18.6em;
+}
+
+.tabPanel-widget label:nth-child(13),
+.tabPanel-widget h2:nth-child(15) {
+  left: 22.6em;
+}
+
+.tabPanel-widget label:nth-child(17),
+.tabPanel-widget h2:nth-child(19) {
+  left: 30.6em;
+}
+
+
+.tabPanel-widget input + h2 + div {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+.tabPanel-widget input:checked + h2 + div {
+  position: static !important;
+  padding: 1em !important;
+  height: auto !important;
+  width: auto !important;
+}
+
+.tabPanel-widget > div {
+  background: #29d;
+  border: 10px solid white;
+  padding: 0 20px;
+}
+.tabPanel-widget input[name="tabs"] {
+  opacity: 0;
+  position: absolute;
+}
+.tabPanel-widget input[name="tabs"]:focus + h2 {
+  outline: 1px dotted #000;
+  outline-offset: 10px;
+}
+.tabPanel-widget:hover h2 {
+  outline: none !important;
+
+}
+.tabPanel-widget input[name="tabs"]:checked + h2 {
+  background: white ;
+  color: #29d;
+}
+
+@media (max-width:991px){
+.social {
+    width: 45px;
+    height: 45px;
+    line-height: 45px !important;
+}
+i.fa.fa-rics.social img {
+    line-height:45px !important;
+}
+}
+@media (max-width:767px){
+.mar-50 {
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+.custom-form-grop .form-control {
+  font-size: 13px;
+}
+.right {
+    float:left;
+}
+.box {
+  width:100%
+}
+.ma-submit {
+  font-size: 16px !important;
+  height: auto !important;
+}
+.form-height-control {
+
+  width: 100%;
+}
+.tabPanel-widget {
+  width: 90%;
+}
+}
+@media (max-width:480px){
+.tabPanel-widget > label, .tabPanel-widget > h2 {
+  width: 85px;
+}
+.tabPanel-widget label:nth-child(5), .tabPanel-widget h2:nth-child(7) {
+  left: 90px;
+}
+.tabPanel-widget label:nth-child(9), .tabPanel-widget h2:nth-child(11) {
+  left: 180px;
+}
+	.social {
+    width:30px;
+    height:30px;
+	font-size:20px !important;
+    line-height:30px !important;
+ }
+ i.fa.fa-rics.social img {
+    width: 20px;line-height:30px !important;
+}
+.ma-submit {
+  padding: 12px 20px !important;
+}
+.pos-rel {
+  padding-bottom: 300px;
+}
+}
+@media (max-width:375px){
+.custom-label {
+  font-size: 13px !important;
+}
+}
+
+
+
+
+/**Form Labels**/
+
+label[for=tab-1], label[for=tab-2]:hover, label[for=tab-3]:hover{
+  cursor:pointer;
+
+}
+
+
+p{
+  color: #fff;
+
+}
+
+label {
+  color: #fff;
+  font-weight: 300;
+  color: white;
+
+
+}
+
+/*Sets labels to pop out with a bigger weight if they are required during social login*/
+label[for=loginradius-socialRegistration-firstname],
+label[for=loginradius-socialRegistration-lastname],
+label[for=loginradius-socialRegistration-emailid],
+label[for=loginradius-socialRegistration-password],
+label[for=loginradius-socialRegistration-confirmpassword] {
+  color: #fff;
+  font-weight: 700;
+
+
+}
+
+
+#lr-showifjsenabled{
+  visibility:initial;
+  height: 100%;
+}
+
+
+
+
+label[for=loginradius-login-emailid],
+label[for=loginradius-login-password],
+label[for=loginradius-registration-firstname],
+label[for=loginradius-registration-lastname],
+label[for=loginradius-registration-phonenumber],
+label[for=loginradius-registration-country],
+label[for=loginradius-registration-cf_Zip],
+label[for=loginradius-registration-emailid],
+label[for=loginradius-registration-password],
+label[for=loginradius-registration-confirmpassword],
+label[for=loginradius-forgotpassword-emailid],
+.lr-form-login-subnote
+{
+  background: #29d;
+    padding: 15px 20px;
+    float: left;
+    list-style: none;
+    margin-right: 3px;
+    font-size: 14px;
+	font-weight: 300;
+	cursor:pointer;
+	margin-bottom: 0px;
+  font-size: 15px !important;
+    padding: 0 0 5px !important;
+    background:none !important;
+}
+
+
+/*Forgot Password Text Link*/
+
+.lr-raas-forgot-password  {
+  color: #fff;
+  text-decoration: none;
+
+
+}
+
+.lr-link-box {
+
+  color: #fff;
+  padding:12px 10px !important;
+  float:left;
+}
+
+
+.lr-raas-forgot-password:hover {
+  color: #fff;
+  cursor: pointer;
+}
+a.lr-raas-login-link {
+  color: #fff !important;
+  text-decoration: none !important;
+
+
+
+}
+
+a.lr-raas-login-link:hover {
+  cursor: pointer;
+  text-decoration: none !important;
+
+
+}
+
+a.lr-register-link {
+  color: #fff !important;
+  text-decoration: none !important;
+
+}
+
+a.lr-register-link:hover {
+  cursor: pointer;
+
+}
+
+
+
+/* Password reset */
+.lr-form-login-message {
+color: #fff;
+padding-bottom: 10px;
+
+}
+
+
+label[for=loginradius-resetpassword-password]{
+font-size: 14px;
+font-weight: 300;
+color: #fff;
+
+
+}
+
+label[for=loginradius-resetpassword-confirmpassword]{
+font-size: 14px;
+font-weight: 300;
+color: #fff;
+
+
+}
+
+
+
+/*form-group custom-form-grop replacement*/
+.loginradius--form-element-content {
+opacity: 1 !important;
+padding: 0 !important;
+position: static !important;
+margin-bottom: 20px;
+}
+
+
+
+
+/*.custom-form-grop .form-control Styling Replacement */
+.loginradius-emailid, .loginradius-password, .loginradius-confirmpassword, .loginradius-string, .loginradius-firstname, .loginradius-lastname  {
+    padding-left: 15px;
+    font-size: 14px;
+    width: 100%;
+    height: 50px;
+    line-height:50px;
+    background: transparent;
+    border: 1px solid white;
+	color:#fff;
+	border-radius: 0;
+}
+
+/*Remove Focus outline*/
+textarea:focus, input:focus{
+    outline: none;
+}
+
+
+
+
+
+/*REGISTRATION FIELDS CSS
+
+
+/*Replacement for col-xs-6 */
+
+#registration-container div.content-loginradius-password, #registration-container div.content-loginradius-confirmpassword, div.content-loginradius-firstname, div.content-loginradius-lastname, .content-loginradius-country, .content-loginradius-cf_Zip  {
+
+  width: 50%;
+  float: left;
+  box-shadow:none !important;
+
+
+}
+
+/*Repacement for .padding-right-group */
+div.content-loginradius-firstname, div.content-loginradius-password, div.content-loginradius-country {
+
+padding-right: 5px !important;
+-webkit-box-shadow: none;
+-moz-box-shadow: none;
+box-shadow: none;
+
+
+
+}
+
+/*Repacement for .padding-left-group */
+div.content-loginradius-lastname, div.content-loginradius-confirmpassword, div.content-loginradius-cf_Zip{
+  padding-left: 5px !important;
+  -webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+
+}
+
+
+
+/* Country drop down */
+button, select{
+      padding-left: 15px;
+      font-size: 14px;
+      width: 100%;
+      height: 50px;
+      line-height: 50px;
+      background: transparent;
+      border: 1px solid white;
+      border-radius: 0;
+}
+
+
+button, select, option{
+  color: white;
+
+}
+
+
+
+
+
+button, select, option:checked + select:hover {
+      background: transparent;
+      color: #fff;
+
+}
+
+
+
+
+
+/* Login Submit Button*/
+
+#loginradius-submit-login {
+  float:left;
+  clear: both;
+
+}
+
+/* Registration form Submit*/
+.submit-loginradius-register {
+    background: white !important;
+    color: #f6830b !important;
+    width: auto !important;
+    padding: 12px 30px !important;
+    font-size: 18px !important;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    border: none;
+    height: auto !important;
+    float:left;
+}
+
+
+
+/*Submit Button CSS Replacement*/
+.loginradius-submit {
+      background: #f6830b !important;
+      color: white !important;
+      width: auto !important;
+      padding: 12px 30px !important;
+  	font-size:18px !important;
+  	-webkit-border-radius:5px;
+  	-moz-border-radius:5px;
+  	border-radius:5px;
+  	border:none;
+  	height: auto !important;
+    margin-bottom:20px;
+}
+
+.submit-loginradius-register{
+
+float:right;
+
+}
+
+
+
+
+/*Makes The Social Login buttons line up*/
+#interfacecontainerdiv, #interfacecontainerdiv1  {
+    opacity: 1 !important;
+    padding: 0 !important;
+    position: static !important;
+    text-align: center;
+    margin-top:10px;
+    clear:both;
+}
+
+
+
+
+
+
+
+/* From Original LoginRadius CSS */
+#lr-raas-message.loginradius-raas-error-message {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 600;
+    background-color: #f73e2d;
+    padding: 10px 20px;
+    z-index: 10;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+}
+
+#lr-raas-message.loginradius-raas-success-message {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-weight: 600;
+    background-color: rgba(34,153,221,0.8);
+    padding: 10px 20px;
+    z-index: 10;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    -webkit-font-smoothing: antialiased;
+}
+
+
+
+.lr-loading-screen-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255,255,255,0.9);
+    z-index: 10;
+    text-align: center;
+}
+
+    .lr-loading-screen-overlay:before {
+        content: "";
+        height: 100%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .lr-loading-screen-overlay .load-dot {
+        display: inline-block;
+        vertical-align: middle;
+        width: 16px;
+        height: 16px;
+        margin: 0 5px;
+        background: #29d;
+        -webkit-animation: shapes 1s ease-in-out infinite;
+        animation: shapes 1s ease-in-out infinite;
+        -webkit-transform: translatey(-5px);
+        -ms-transform: translatey(-5px);
+        transform: translatey(-5px);
+        border-radius: 50%;
+    }
+
+        .lr-loading-screen-overlay .load-dot:nth-child(3) {
+            -webkit-animation-delay: 0.25s;
+            animation-delay: 0.25s;
+        }
+
+        .lr-loading-screen-overlay .load-dot:nth-child(2) {
+            -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+        }
+
+        .lr-loading-screen-overlay .load-dot:nth-child(1) {
+            -webkit-animation-delay: 0.75s;
+            animation-delay: 0.75s;
+        }
+
+
+
+        @-webkit-keyframes shapes {
+            0% {
+                -webkit-transform: translatey(-5px);
+                transform: translatey(-5px);
+            }
+
+            50% {
+                -webkit-transform: translatey(5px);
+                transform: translatey(5px);
+                background: #00427c;
+            }
+
+            100% {
+                -webkit-transform: translatey(-5px);
+                transform: translatey(-5px);
+            }
+        }
+
+        @keyframes shapes {
+            0% {
+                -webkit-transform: translatey(-5px);
+                transform: translatey(-5px);
+            }
+
+            50% {
+                -webkit-transform: translatey(5px);
+                transform: translatey(5px);
+                background: #00427c;
+            }
+
+            100% {
+                -webkit-transform: translatey(-5px);
+                transform: translatey(-5px);
+            }
+        }
+
+
+
+.loginradius-validation-message {
+
+  color: red;
+
+
+}
