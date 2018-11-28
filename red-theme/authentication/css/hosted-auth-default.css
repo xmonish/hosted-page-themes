@@ -1,0 +1,282 @@
+/* main */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html {
+  text-size-adjust: 100%;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  font-size: 18px;
+}
+
+@media (max-width:880px) {
+  html {
+    font-size: 17px
+  }
+}
+
+@media (max-width:600px) {
+  html {
+    font-size: 16px
+  }
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Helvetica, sans-serif;
+  background-color: #ffffff;
+  color: #3b3b3b;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  vertical-align: baseline;
+  margin: 0;
+}
+
+nav {
+  display: block;
+}
+
+ul {
+  list-style-type: none;
+  border-bottom: 1px solid #e7e7e8;
+  margin-left: 0;
+  padding-left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 1.2em;
+}
+
+h2 {
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: 1.2;
+  text-transform: none;
+  margin-bottom: .6rem;
+  margin-top: 0;
+}
+
+a:-webkit-any-link {
+  color: -webkit-link;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+a {
+  color: #E03100;
+  cursor: pointer;
+}
+
+#interfacecontainerdiv a {
+  text-decoration: none;
+}
+
+ul {
+  margin-bottom: 1.2rem;
+  margin-top: 0.8em;
+}
+
+.lr-main {
+  z-index: 101;
+  margin: 0 auto;
+  max-width: 400px;
+}
+
+ul .active {
+  background-color: #ffffff;
+  border-color: #e7e7e8;
+}
+
+.tab {
+  margin: 0;
+  border: 1px solid transparent;
+  border-bottom: 0;
+  display: inline-block;
+  padding: 8px 16px;
+  position: relative;
+  top: 1px;
+}
+
+li {
+  text-align: -webkit-match-parent;
+  display: inline-block;
+}
+
+/* logo */
+
+.logo-div {
+  box-sizing: border-box;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.logo img {
+  display: block;
+  margin: 8px auto;
+  max-height: 50px;
+  max-width: 60%;
+}
+
+/* social login interface */
+
+#interfacecontainerdiv {
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.social-icon {
+  width: 60px;
+  height: 60px;
+  opacity: 0.75;
+}
+
+.social-icon:hover {
+  opacity: 1;
+}
+
+/* forms */
+
+.loginradius-emailid,
+.loginradius-password,
+.loginradius-username {
+  background-color: rgb(255, 255, 255);
+  border-color: rgb(231, 231, 232);
+  border-style: solid;
+  border-width: 1px;
+  font-size: 0.75em;
+  font-stretch: 100%;
+  letter-spacing: normal;
+  line-height: 19.125px;
+  margin-bottom: 9px;
+  padding: 8px;
+  width: 400px;
+}
+
+#loginradius-submit-login,
+#loginradius-submit-register,
+#loginradius-submit-send,
+.cancel-forgot-pw,
+#loginradius-submit-reset-password {
+  align-items: flex-start;
+  border-width: 1px;
+  background-color: rgb(255, 76, 25);
+  border-width: 0;
+  box-sizing: border-box;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  display: inline-block;
+  text-rendering: optimizeLegibility;
+  font-size: .75em;
+  letter-spacing: .09em;
+  font-weight: 400;
+  height: 35px;
+  margin-bottom: 8px;
+  padding: 8px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#loginradius-submit-register,
+#loginradius-submit-reset-password {
+  float: right;
+}
+
+.forgot-pw-form-button-div {
+  overflow: auto;
+}
+
+#loginradius-submit-send,
+.cancel-forgot-pw {
+  margin: 5px;
+  float: right;
+}
+
+.content-loginradius-emailid label,
+.content-loginradius-password label,
+.content-loginradius-username label,
+.content-loginradius-confirmpassword label {
+  display: none;
+  height: 0px;
+}
+
+.content-loginradius-stayLogin {
+  float: left;
+}
+
+.content-loginradius-stayLogin label {
+  font-size: .75em;
+}
+
+.content-loginradius-stayLogin input {
+  margin-right: 8px;
+}
+
+#loginradius-submit-login {
+  float: right;
+  margin-top: 7px;
+}
+
+label {
+  font-weight: 400;
+  display: inline-block;
+  margin-left: 4px;
+  font-size: .75em;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  text-transform: capitalize;
+}
+
+.wrapper {
+  min-height: 44px;
+  margin: 9px;
+}
+
+.link-group {
+  display: block;
+  font-size: .625em;
+}
+
+.small-separator {
+  color: #ccc;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+#lr-raas-forgotpassword,
+#registration-container,
+#lr-raas-resetpassword {
+  display: none
+}
+
+.forgot-pw-title {
+  margin-bottom: 16px;
+  text-align: center;
+  line-height: 1.2;
+  font-size: calc(1em * 1.250 * 1.250)
+}
+
+.lr-form-login-subnote {
+  font-weight: 700;
+}
+
+/* validation and error messages */
+
+.loginradius-validation-message {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: #dc3f2a;
+  margin-bottom: 8px;
+  font-size: .75em;
+}
+
+#lr-raas-message {
+  color: #dc3f2a;
+  margin-bottom: 8px;
+  font-size: .75em;
+}

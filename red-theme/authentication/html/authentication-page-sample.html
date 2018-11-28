@@ -1,0 +1,70 @@
+<div class='lr-main'>
+    <!-- logo -->
+    <!-- To customize, replace the image with your own logo -->
+    <div class="logo-div">
+      <img src='' class='logo'></img>
+    </div>
+    <!-- tabs -->
+    <nav class='tabs'>
+      <ul>
+        <li class='tab active login-tab'>
+          <a class='lr-raas-login-link'>Log In</a>
+        </li>
+        <li class='tab register-tab'>
+          <a class='lr-register-link'>Sign up</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- social login 
+    IMPORTANT - the sample social identity provider icons are provided with this theme project 
+    Please change the https://bit.ly/ link with an url pointing to your own uploaded icon image files accordingly
+    When uploading social identity provider icon files, please remember to upload the icons with corresponding names, then replace the name with <#= #> in the img tag
+    e.g. for facebook, upload to a customized url like www.example.com/Facebook -->
+    <div id='lr-social-login' class='lr-social-login-frame lr-frames cf'>
+      <div id='interfacecontainerdiv' class='lr-sl-shaded-brick-frame cf lr-widget-container'>
+      </div>
+      <script type="text/html" id="loginradiuscustom_tmpl">
+        <a href="javascript:void()" onclick="return <#=ObjectName#>.util.openWindow('<#=Endpoint#>');">
+          <img src="https://bit.ly/<#= Name #>-login-logo" class="social-icon"/>
+        </a>
+      </script>
+    </div>
+    <!-- success messages -->
+    <div id='lr-raas-message' class='loginradius-raas-success-message'></div>
+    <!-- traditional login -->
+    <div id='lr-traditional-login'>
+      <div id='login-container' class='lr-widget-container'>
+        <div class='lr-link-box'>
+          <a class='lr-raas-forgot-password'>Forgot password?</a>
+        </div>
+      </div>
+    </div>
+    <div class='wrapper'>
+    </div>
+    <!-- forgot password and username link group  -->
+    <div class='link-group'>
+      <a class='action-link'>Forgot your username?</a>
+      <span class="small-separator">|</span>
+      <a class='action-link lr-raas-forgot-password'>Forgot your password?</a>
+    </div>
+    <!-- registration form -->
+    <div id='lr-raas-registration' class='lr-form-frame'>
+      <div id='registration-container' class='lr-widget-container'>
+      </div>
+    </div>
+    <!-- forgot password form-->
+    <div id='lr-raas-forgotpassword' class='lr-form-frame'>
+      <h2 class='lr-form-login-message forgot-pw-title'>Forgot password?</h2>
+      <p class='lr-form-login-subnote'><strong></strong>We'll email you a link to reset it.</p>
+      <p>
+        If you signed up using a third party service such as Facebook or Twitter, please login with that instead.
+      </p>
+      <div id='forgotpassword-container' class='lr-widget-container'>
+      </div>
+    </div>
+    <!-- reset password form  -->
+    <div id='lr-raas-resetpassword' class='lr-form-frame'>
+      <h2 class='lr-form-login-message'>Reset your Password</h2>
+      <div id='resetpassword-container' class='lr-widget-container'>
+      </div>
+    </div>
