@@ -1,0 +1,92 @@
+<!-- Customizable Dynamic content start -->
+<link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="wrapper">
+	<div class="logobox">
+		<img src="../Images/logo.gif" alt="Company logo" class="image">
+	</div>
+
+	<div class='grid lr-hostr-container'>
+		<div id='lr-raas-message' class='loginradius-raas-success-message'></div>
+        <!--
+        *
+        *
+        * SOCIAL LOGIN
+        -->
+		<div class='grid lr-hostr-frame cf'>
+			<div id='lr-social-login' class='lr-social-login-frame lr-frames lr-sample-background-enabled cf'>
+				<h2 class='lr-social-login-message heading'>Login with your social account</h2>
+				<div id='interfacecontainerdiv' class='lr-sl-shaded-brick-frame cf lr-widget-container'></div>
+				<script type="text/html" id="loginradiuscustom_tmpl">
+					<span onclick=" return LRObject.util.openWindow('<#= Endpoint #>'); "
+					title="Sign up with <#= Name #>" alt="Sign in with <#= Name#>">
+					<span class="lr-sl-icon-<#= Name.toLowerCase()#>"></span>
+					<i class="fa fa-<#= Name.toLowerCase()#> social"></i>
+					</span>
+				</script>
+			</div>
+        <!--
+        *
+        *
+        * TRADITIONAL LOGIN
+        -->		
+			<div class='lr-frames lr-forms-container'>
+				<div id='lr-traditional-login' class='lr-form-frame'>
+					<h2 class='lr-form-login-message heading'>...or login with your email</h2>
+					<div id='login-container' class='lr-widget-container'></div>
+					<div class='lr-link-box'>
+						<a class='lr-raas-forgot-password PWlink'>Forgot password?</a>
+						<a class='lr-register-link AccountLink'>Create Account</a>
+					</div>
+				</div>
+        <!--
+        *
+        *
+        * USER REGISTRATION
+        -->				
+				<div id='lr-raas-registartion' class='lr-form-frame'>
+					<h2 class='lr-form-login-message heading' >...or create an account</h2>
+					<div id='registration-container' class='lr-widget-container'></div>
+					<div class='lr-link-box'>
+						<a class='lr-raas-forgot-password PWlink'>Forgot password?</a>
+						<a class='lr-raas-login-link AccountLink'>Login</a>
+					</div>
+				</div>
+            <!--
+            *
+            *
+            * FORGOT PASS
+            -->				
+				<div id='lr-raas-forgotpassword' class='lr-form-frame'>
+					<a class='lr-form-login-message heading'>Forgot Password</a>
+					<div id='forgotpassword-container' class='lr-widget-container'></div>
+					<div class='lr-link-box'>
+						<a class='lr-raas-login-link PWlink'>Login</a>
+						<a class='lr-register-link AccountLink'>Create Account</a>
+					</div>
+				</div>
+            <!--
+            *
+            *
+            * ADDITIONAL FIELDS REQUIRED FOR SOCIAL LOGIN
+            -->
+				<div id='lr-raas-sociallogin' class='lr-form-frame'>
+					<h2 class='lr-form-login-message heading'>Complete your Profile</h2>
+					<p class='lr-form-login-subnote subheading'>Require to fill all mandatory fields.</p>
+					<div id='sociallogin-container' class='lr-widget-container'></div>
+				</div>
+				<div id='lr-raas-resetpassword' class='lr-form-frame'>
+					<h2 class='lr-form-login-message heading'>Reset your Password</h2>
+					<div id='resetpassword-container' class='lr-widget-container'></div>
+				</div>
+			</div>
+		</div>
+	</div>
+<!-- Loading screen -->
+	<div class='lr_fade lr-loading-screen-overlay' id='loading-spinner'>
+		<div class='load-dot'></div>
+		<div class='load-dot'></div>
+		<div class='load-dot'></div>
+		<div class='load-dot'></div>
+	</div>
+</div>
