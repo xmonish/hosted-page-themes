@@ -1,0 +1,417 @@
+/*
+* NOTE:
+* I'm on mobile first design so every default properties are for mobile
+* everything inside media tags are for tablet and desktop
+*/
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600");
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    background: #d6d6d4;
+    background-image: initial;
+    background-position-x: initial;
+    background-position-y: initial;
+    background-size: initial;
+    background-repeat-x: initial;
+    background-repeat-y: initial;
+    background-attachment: initial;
+    background-origin: initial;
+    background-clip: initial;
+    background-color: rgb(214, 214, 212);
+    font-family: "proxima-nova","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1;
+    color: #575a5d;
+    position: relative;
+    -webkit-font-smoothing: antialiased;
+}
+
+.description {
+    margin: 20px 15px 5px;
+}
+
+.wrapper{
+	background-color: #191c1f;
+	width: 500px;
+	height: 100%;
+	margin: 0 auto;
+	padding: 30px 0 30px 0;
+	
+}
+
+.logobox{
+    border-bottom: 1px solid #6c6f70;
+	margin: 0;
+	padding: 0;
+
+	}
+.image{
+
+	width: 140px;
+	height: 140px;
+	margin: 30px auto;
+	display: block;
+	padding: 10px;
+	background-color: #eee;
+	border-radius: 50%;
+	border: 2px solid red;
+	
+
+}
+
+.message{
+	color: #fff;
+    font-size: 17px;
+    margin-bottom: 13px;
+    text-align: center;
+	font-family: "DroidSansRegular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 0;
+    padding: 0;
+}
+
+
+.lr-form-login-subnote{
+	color: #fff;
+    font-size: 17px;
+	font-family: "DroidSansRegular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+    padding:20px 22px 0 22px ;
+}
+
+
+label{
+	color: #fff;
+    font-size: 17px;
+
+    text-align: center;
+	font-family: "DroidSansRegular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+	margin: 0;
+    padding: 10px 0 0 24px;
+}
+
+
+.button{
+    background-color: #e70033;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    width: 410px;
+    font-family: "stratum1medium","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+    padding: 18px 20px;
+    text-align: center;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	margin: 10px auto 5px ;
+
+}
+
+label:after {
+   content: "*";
+}
+
+input[type="submit"]{
+    background-color: #e70033;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    display: block;
+    width: 456px;
+	height: 56px;
+    font-family: "stratum1medium","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+
+	margin: 0 auto;
+    text-align: center;
+	vertical-align: center;
+    transition: all .3s ease;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+	margin-bottom: 10px;
+
+}
+
+.button:hover {
+    background-color: #792532;
+    color: #fff;
+}
+
+input[type="submit"]:hover {
+    background-color: #792532;
+    color: #fff;
+}
+
+
+.loginradius-errormessage {
+    color: red;
+}
+
+
+
+input{
+	background-color: #ededed;
+    border: none;
+    font-family: inherit;
+    color: rgba(0,0,0,.75);
+    display: block;
+    font-size: 14px;
+    margin: 0 auto 10px;
+    padding: 3px 20px;
+    height: 38px;
+    width: 410px;
+    transition: all .15s linear;
+	border-radius: 0;
+    box-shadow: none;
+
+}
+
+
+/*
+*
+*
+* Social Icon Style
+*
+***/
+
+#interfacecontainerdiv{
+	margin: 5px auto;
+	text-align: center;
+}
+
+i.fa.fa-rics.social {background: #4c2f69;}
+i.fa.fa-rics.social img {margin-top:-5px;line-height:50px!important;}
+
+
+i.fa.fa-amazon.social {
+    background-color: #f90;
+}
+
+i.fa.fa-aol.social {
+    background-color: #066cb1;
+}
+
+i.fa.fa-disqus.social {
+    background-color: #35a8ff;
+}
+
+i.fa.fa-facebook.social {
+    background-color: #3b5998;
+}
+
+i.fa.fa-foursquare.social {
+    background-color: #1cafec;
+}
+
+i.fa.fa-github.social {
+    background-color: #181616;
+}
+
+i.fa.fa-google.social {
+    background-color: #dd4b39;
+}
+
+i.fa.fa-googleplus.social {
+    background-color: #dd4b39;
+}
+
+i.fa.fa-hyves.social {
+    background-color: #f9a539;
+}
+
+i.fa.fa-instagram.social {
+    background-color: #406e94;
+}
+
+i.fa.fa-kaixin.social {
+    background-color: #bb0e0f;
+}
+
+i.fa.fa-linkedin.social {
+    background-color: #007bb6;
+}
+
+i.fa.fa-live.social {
+    background-color: #004c9a;
+}
+
+i.fa.fa-livejournal.social {
+    background-color: #3770a3;
+}
+
+i.fa.fa-mixi.social {
+    background-color: #d1ad5a;
+}
+
+i.fa.fa-myspace.social {
+    background-color: #313131;
+}
+
+i.fa.fa-odnoklassniki.social {
+    background-color: #f69324;
+}
+
+i.fa.fa-openid.social {
+    background-color: #f7921c;
+}
+
+i.fa.fa-orange.social {
+    background-color: #f60;
+}
+
+i.fa.fa-paypal.social {
+    background-color: #13487b;
+}
+
+i.fa.fa-persona.social {
+    background-color: #e0742f;
+}
+
+i.fa.fa-qq.social {
+    background-color: #29d;
+}
+
+i.fa.fa-renren.social {
+    background-color: #005baa;
+}
+
+i.fa.fa-salesforce.social {
+    background-color: #9cd3f2;
+}
+
+i.fa.fa-stackexchange.social {
+    background-color: #4ba1d8;
+}
+
+i.fa.fa-steamcommunity.social {
+    background-color: #666;
+}
+
+i.fa.fa-tumblr.social {
+    background-color: #32506d;
+}
+
+i.fa.fa-twitter.social {
+    background-color: #55acee;
+}
+
+i.fa.fa-verisign.social {
+    background-color: #0261a2;
+}
+
+i.fa.fa-virgilio.social {
+    background-color: #eb6b21;
+}
+
+i.fa.fa-vkontakte.social {
+    background-color: #45668e;
+}
+
+i.fa.fa-sinaweibo.social {
+    background-color: #bb3e3e;
+}
+
+i.fa.fa-wordpress.social {
+    background-color: #21759c;
+}
+
+i.fa.fa-yahoo.social {
+    background-color: #400090;
+}
+
+i.fa.fa-xing.social {
+    background-color: #007072;
+}
+
+i.fa.fa-mailru.social {
+    background-color: #1897e6;
+}
+
+.fa{
+	height: 55px;
+    width: 85px;
+	line-height: 55px !important;
+	vertical-align: middle;
+	margin: 0;
+	text-align: center;
+	color: white;
+}
+
+
+
+.lr-provider-label{
+	font-size: 20px;
+	display: inline-block;
+	margin:0;
+	padding: 0;
+}
+
+.lr-form-frame{
+display: none;
+}	
+
+#mainScreen{
+display: block;
+}
+
+
+.lr-social-login-message{
+	
+	color: white;
+	text-align: center;
+}
+
+.privacymessage{
+	color: #898b8a;
+    font-family: "DroidSansBold","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	line-height: 40px;
+	vertical-align: middle;
+	text-align: center;
+	border-top: 1px solid #6c6f70;
+	margin-top: 10px;
+	
+}
+
+.bold{
+	
+	font-weight: bold;
+}
+
+.lr-raas-forgot-password{
+	float: right;	
+	color: #fff;
+    font-size: 17px;
+    margin-right: 22px;
+    text-align: center;
+	font-family: "DroidSansRegular","Helvetica Neue","Helvetica",Helvetica,Arial,sans-serif;
+	font-weight: 400;
+	line-height: 1.6;
+    padding: 0;
+}
+
+
+.loginradius-raas-error-message, .loginradius-validation-message{
+	color: Red;
+	padding: 10px 20px 0 20px;
+	Background-color: white;
+	display: none;
+	
+	
+}
+
+

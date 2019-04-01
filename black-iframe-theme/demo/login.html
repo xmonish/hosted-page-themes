@@ -1,0 +1,72 @@
+<html>
+<body>
+<head>
+  <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+<!-- including the required scripts -->
+<script type="text/javascript" src="../parent-page-files/LoginRadiusV2.iframeSDK.min.js"></script>
+<script type="text/javascript" src="../parent-page-files/iframeSDK-Options.js"></script>
+
+	<style>
+
+		#login-iframe{
+			top: 50px;
+			left: 50%;
+			height: 980px;
+			width: 500px;
+			position: absolute;
+			z-index: 50;
+			margin-bottom: 100px;
+			margin-left: -250px;
+			border: none;
+			padding:0;
+		}
+
+		iframe{
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.result{
+			color: red;
+			background-color: white;
+			text-align: center;
+			font-size: 10px;
+		}
+		
+
+
+	</style>
+
+</head>
+
+<div id="login-iframe"></div>
+<div id="result" class="result"> </div>
+
+<script type="text/javascript">
+var varheight ;
+  var ciamwidget_obj = new LoginRadiusCiamWidget(LRConfigObj, LRCommonOptions);
+  ciamwidget_obj.render('login','login-iframe', 'auth.aspx', function(response){
+       /* -- you will get response object ,write your code here to handle success -- */
+     console.log(response); 
+	 document.getElementById("login-iframe").style.height = response.response.height;
+      <!-- document.getElementById("result").set.h = "Success: " + JSON.stringify(response); -->
+
+
+
+  },
+  function(error){
+      /* -- write your code here to handle error --*/
+
+      document.getElementById("result").innerHTML = "Error: " + JSON.stringify(error);
+
+    });
+	
+</script >
+
+
+</body>
+	<script type="text/javascript">
+		$("iframe").attr("scrolling", "no");
+	</script>
+</html>

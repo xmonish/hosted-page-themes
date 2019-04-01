@@ -1,0 +1,64 @@
+<html>
+<body>
+<head>
+<script type="text/javascript" src="../parent-page-files/LoginRadiusV2.iframeSDK.min.js"></script>
+<script type="text/javascript" src="../parent-page-files/iframeSDK-Options.js"></script>
+	<style>
+
+		#profile-iframe{
+			top: 50px;
+			left: 50%;
+
+			width: 500px;
+			position: absolute;
+			z-index: 50;
+			margin-bottom: 100px;
+			margin-left: -250px;
+			border: none;
+			padding:0;
+		}
+
+		iframe{
+			border: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.result{
+			color: red;
+			background-color: white;
+			text-align: center;
+			font-size: 10px;
+		}
+
+	</style>
+</head>
+
+<div id="profile-iframe"></div>
+<div id="result" class="result"> </div>
+
+<script type="text/javascript">
+
+  var ciamwidget_obj = new LoginRadiusCiamWidget(LRConfigObj, LRCommonOptions);
+  ciamwidget_obj.render('profile','profile-iframe', 'auth.aspx', function(response){
+       /* -- you will get response object ,write your code here to handle success -- */
+	 document.getElementById("profile-iframe").style.height = response.response.height;
+        console.log(JSON.stringify(response));
+  },
+  function(error){
+      /* -- write your code here to handle error --*/
+
+      document.getElementById("result").innerHTML = "Error : " + JSON.stringify(error);
+
+    });
+</script>
+
+
+  <script   src="https://code.jquery.com/jquery-3.3.1.js"   integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="   crossorigin="anonymous"></script>
+</body>
+	<script type="text/javascript">
+		$("iframe").attr("scrolling", "no");
+		$("iframe").attr("width", "520px");
+		$("iframe").attr("height", "725px");		
+	</script>
+</html>
